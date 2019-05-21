@@ -1,10 +1,7 @@
 package com.company.Card;
 
 public class SuitStack  extends CardStack{
-    public SuitStack()
-    {
 
-    }
 
     @Override
     public void push(CardStack pStack, int index) {

@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="849ff14d-4d9e-40f1-a56b-44c7d762cf07" name="Default" comment="" />
+    <list default="true" id="849ff14d-4d9e-40f1-a56b-44c7d762cf07" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/Card/GameModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/Card/GameModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/CardPileView$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/CardPileView$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/CardPileView$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/CardPileView$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/CardPileView$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/CardPileView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/Solitaire_GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/Solitaire_GUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Card/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Card/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Card/CardStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Card/CardStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Card/DeckStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Card/DeckStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Card/DisCardStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Card/DisCardStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Card/GameModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Card/GameModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Card/SuitStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Card/SuitStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Card/TableStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Card/TableStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/GUI/CardPileView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/GUI/TablePileView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/GUI/DiscardPileView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/GUI/DiscardPileView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/GUI/Solitaire_GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/GUI/Solitaire_GUI.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,11 +32,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Card_Interface.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Card/Card_Interface.java">
+      <file leaf-file-name="GameModel.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Card/GameModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="643">
+              <caret line="368" lean-forward="true" selection-end-line="374" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JAVA/com.company.Card.GameModel" pinned="false" current-in-tab="false">
+        <entry file="uml://JAVA/com.company.Card.GameModel">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>com.company.Card.GameModel</OriginalElement>
+              <nodes>
+                <node x="-27.780876494023914" y="-5.848605577689284">com.company.Card.GameModel</node>
+              </nodes>
+              <notes />
+              <edges />
+              <settings layout="Hierarchic Group" zoom="0.6839237057220708" x="-225.73904382470124" y="340.9163346613546" />
+              <SelectedNodes>
+                <node>com.company.Card.GameModel</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Fields</Category>
+                <Category>Constructors</Category>
+                <Category>Methods</Category>
+                <Category>Properties</Category>
+                <Category>Inner Classes</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
@@ -24,72 +72,86 @@
       <file leaf-file-name="CardStack.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Card/CardStack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="86" column="9" lean-forward="true" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameModelListener.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/GUI/GameModelListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CardStack_Interface.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Card/CardStack_Interface.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Card/GameModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="281" column="5" lean-forward="true" selection-start-line="268" selection-start-column="4" selection-end-line="281" selection-end-column="5" />
+            <state relative-caret-position="218">
+              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
               <folding>
-                <element signature="method#addListener#0;class#GameModel#0" />
-                <element signature="method#notifyListeners#0;class#GameModel#0" />
-                <element signature="e#9594#9595#0" expanded="true" />
-                <element signature="e#9636#9637#0" expanded="true" />
-                <element signature="e#9677#9678#0" expanded="true" />
-                <element signature="e#9728#9729#0" expanded="true" />
-                <element signature="e#9958#9959#0" expanded="true" />
-                <element signature="e#9992#9993#0" expanded="true" />
+                <element signature="e#278#279#0" expanded="true" />
+                <element signature="e#329#330#0" expanded="true" />
+                <element signature="e#369#370#0" expanded="true" />
+                <element signature="e#415#416#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CardImages.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Card/CardImages.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeckStack.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Card/DeckStack.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TableStack.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Card/TableStack.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+      <file leaf-file-name="JAVA/com.company.Card" pinned="false" current-in-tab="false">
+        <entry file="uml://JAVA/com.company.Card">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>com.company.Card</OriginalElement>
+              <nodes>
+                <node x="0.0" y="646.0">com.company.Card.TableStack</node>
+                <node x="519.0" y="764.0">com.company.Card.CardImages</node>
+                <node x="1000.0" y="0.0">com.company.Card.GameModel</node>
+                <node x="378.0" y="0.0">com.company.Card.CardStack_Interface</node>
+                <node x="238.0" y="764.0">com.company.Card.Rank</node>
+                <node x="14.0" y="764.0">com.company.Card.Card_Interface</node>
+                <node x="367.0" y="764.0">com.company.Card.Suit</node>
+                <node x="386.0" y="301.0">com.company.Card.CardStack</node>
+                <node x="729.0" y="657.0">com.company.Card.SuitStack</node>
+                <node x="483.0" y="657.0">com.company.Card.DisCardStack</node>
+                <node x="0.0" y="1042.0">com.company.Card.Card</node>
+                <node x="351.0" y="668.0">com.company.Card.DeckStack</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="com.company.Card.DisCardStack" target="com.company.Card.CardStack">
+                  <point x="0.0" y="-25.5" />
+                  <point x="596.0" y="626.0" />
+                  <point x="530.375" y="626.0" />
+                  <point x="28.875" y="147.5" />
+                </edge>
+                <edge source="com.company.Card.SuitStack" target="com.company.Card.CardStack">
+                  <point x="0.0" y="-25.5" />
+                  <point x="842.0" y="616.0" />
+                  <point x="588.125" y="616.0" />
+                  <point x="86.625" y="147.5" />
+                </edge>
+                <edge source="com.company.Card.Card" target="com.company.Card.Card_Interface">
+                  <point x="0.0" y="-115.0" />
+                  <point x="0.0" y="114.0" />
+                </edge>
+                <edge source="com.company.Card.CardStack" target="com.company.Card.CardStack_Interface">
+                  <point x="0.0" y="-147.5" />
+                  <point x="0.0" y="125.5" />
+                </edge>
+                <edge source="com.company.Card.TableStack" target="com.company.Card.CardStack">
+                  <point x="0.0" y="-36.5" />
+                  <point x="165.5" y="616.0" />
+                  <point x="414.875" y="616.0" />
+                  <point x="-86.625" y="147.5" />
+                </edge>
+                <edge source="com.company.Card.DeckStack" target="com.company.Card.CardStack">
+                  <point x="0.0" y="-14.5" />
+                  <point x="407.0" y="626.0" />
+                  <point x="472.625" y="626.0" />
+                  <point x="-28.875" y="147.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.3882443928847641" x="36.72808764940237" y="598.1673306772909" />
+              <SelectedNodes>
+                <node>com.company.Card.GameModel</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Fields</Category>
+                <Category>Constructors</Category>
+                <Category>Methods</Category>
+                <Category>Properties</Category>
+                <Category>Inner Classes</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
@@ -97,8 +159,44 @@
       <file leaf-file-name="SuitStack.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Card/SuitStack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="75">
+              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="11" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TableStack.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Card/TableStack.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="466">
+              <caret line="34" column="5" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="34" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CardStack_Interface.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Card/CardStack_Interface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="31" column="15" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="31" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Card.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Card/Card.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="88" column="9" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="88" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeckStack.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Card/DeckStack.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -106,8 +204,8 @@
       <file leaf-file-name="DisCardStack.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Card/DisCardStack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            <state>
+              <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -121,8 +219,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/com/company/GUI/CardPileView.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/com/company/GUI/TablePileView.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -135,21 +236,22 @@
         <option value="$PROJECT_DIR$/src/com/company/GUI/Restart.java" />
         <option value="$PROJECT_DIR$/src/com/company/Card/Suit.java" />
         <option value="$PROJECT_DIR$/src/com/company/GUI/SuitPileView.java" />
-        <option value="$PROJECT_DIR$/src/com/company/GUI/DiscardPileView.java" />
         <option value="$PROJECT_DIR$/src/com/company/GUI/CardPileView.java" />
         <option value="$PROJECT_DIR$/src/com/company/GUI/Regret_game.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Card/Card.java" />
-        <option value="$PROJECT_DIR$/src/com/company/GUI/DeckPileView.java" />
         <option value="$PROJECT_DIR$/src/com/company/GUI/Mode_selection.java" />
-        <option value="$PROJECT_DIR$/src/com/company/GUI/Solitaire_GUI.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Card/SuitStack.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Card/DeckStack.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Card/DisCardStack.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Card/TableStack.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Card/GameModel.java" />
         <option value="$PROJECT_DIR$/src/com/company/Card/Card_Interface.java" />
         <option value="$PROJECT_DIR$/src/com/company/Card/CardStack_Interface.java" />
+        <option value="$PROJECT_DIR$/src/com/company/GUI/TablePileView.java" />
+        <option value="$PROJECT_DIR$/src/com/company/GUI/DeckPileView.java" />
+        <option value="$PROJECT_DIR$/src/com/company/GUI/DiscardPileView.java" />
+        <option value="$PROJECT_DIR$/src/com/company/GUI/Solitaire_GUI.java" />
         <option value="$PROJECT_DIR$/src/com/company/Card/CardStack.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Card/Card.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Card/DeckStack.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Card/DisCardStack.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Card/SuitStack.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Card/TableStack.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Card/GameModel.java" />
       </list>
     </option>
   </component>
@@ -167,6 +269,7 @@
     <option name="width" value="1440" />
     <option name="height" value="824" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -198,13 +301,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
               <item name="Card" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SolitairePlus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SolitairePlus" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="GUI" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -284,12 +380,12 @@
       <workItem from="1558162256880" duration="27000" />
       <workItem from="1558169237832" duration="14694000" />
       <workItem from="1558239671087" duration="698000" />
-      <workItem from="1558240888742" duration="17930000" />
+      <workItem from="1558240888742" duration="31499000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40044000" />
+    <option name="totallyTimeSpent" value="53613000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -297,7 +393,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" visible="true" weight="0.32969698" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32969698" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -305,7 +401,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32848486" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -337,41 +433,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/DiscardPileView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="58" column="33" selection-start-line="58" selection-start-column="33" selection-end-line="58" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/GameModelListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Card/CardStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="61" column="40" selection-start-line="61" selection-start-column="40" selection-end-line="61" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/Solitaire_GUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/SuitPile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/GUI/SuitPileView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -386,12 +447,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/CardPileView.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/TablePileView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2460">
           <caret line="172" column="5" lean-forward="true" selection-start-line="94" selection-start-column="3" selection-end-line="172" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2924#3445#0" expanded="true" />
+            <element signature="e#3444#3445#0" expanded="true" />
+            <element signature="e#4919#5145#0" expanded="true" />
+            <element signature="e#5144#5145#0" expanded="true" />
+            <element signature="e#5327#6091#0" expanded="true" />
+            <element signature="e#6090#6091#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -537,30 +604,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/SuitPile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/DiscardPileView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="36" column="58" lean-forward="true" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/Restart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="67" column="74" lean-forward="true" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Card/Card_UML">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -585,6 +628,9 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/resources/SPADESFIVE.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/GUI/TablePile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -592,37 +638,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/DeckPileView.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/DiscardPileView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="109" column="81" selection-start-line="109" selection-start-column="81" selection-end-line="109" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/CardPileView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="165" column="20" selection-start-line="165" selection-start-column="20" selection-end-line="165" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/Regret_game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="70" column="5" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="70" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-489">
+          <caret line="36" column="60" lean-forward="true" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/GUI/SuitPileView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
+        <state relative-caret-position="-903">
           <caret line="38" column="58" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/DeckPileView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-588">
+          <caret line="59" column="33" lean-forward="true" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+          <folding>
+            <element signature="e#2163#2330#0" expanded="true" />
+            <element signature="e#2329#2330#0" expanded="true" />
+            <element signature="e#2362#2828#0" expanded="true" />
+            <element signature="e#2827#2828#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/TablePileView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="141" column="43" lean-forward="true" selection-start-line="141" selection-start-column="27" selection-end-line="141" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2924#3445#0" expanded="true" />
+            <element signature="e#3444#3445#0" expanded="true" />
+            <element signature="e#4919#5145#0" expanded="true" />
+            <element signature="e#5144#5145#0" expanded="true" />
+            <element signature="e#5327#6091#0" expanded="true" />
+            <element signature="e#6090#6091#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/GameModelListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -632,105 +694,288 @@
           <caret line="47" column="60" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1048#1331#0" expanded="true" />
-            <element signature="e#1330#1331#0" expanded="true" />
-            <element signature="e#1400#1627#0" expanded="true" />
-            <element signature="e#1626#1627#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/Regret_game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="70" column="5" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="70" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/Restart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="67" column="74" lean-forward="true" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/SuitPile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/GUI/Solitaire_GUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Card/Card.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="47" column="15" lean-forward="true" selection-start-line="47" selection-start-column="15" selection-end-line="47" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Card/DeckStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Card/DisCardStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Card/SuitStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Card/TableStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        <state relative-caret-position="80">
+          <caret line="29" column="16" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Card/CardImages.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="237">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.company.GUI">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.company.GUI</OriginalElement>
+          <nodes>
+            <node x="842.0" y="134.0">com.company.GUI.SuitPileView</node>
+            <node x="634.0" y="507.0">com.company.GUI.Restart</node>
+            <node x="316.0" y="507.0">com.company.GUI.Mode_selection</node>
+            <node x="952.0" y="507.0">com.company.GUI.Regret_game</node>
+            <node x="1391.0" y="101.0">com.company.GUI.TablePileView</node>
+            <node x="1417.0" y="507.0">com.company.GUI.SuitPile</node>
+            <node x="0.0" y="507.0">com.company.GUI.Solitaire_GUI</node>
+            <node x="782.0" y="0.0">com.company.GUI.GameModelListener</node>
+            <node x="549.0" y="178.0">com.company.GUI.DeckPileView</node>
+            <node x="0.0" y="134.0">com.company.GUI.DiscardPileView</node>
+            <node x="1270.0" y="507.0">com.company.GUI.TablePile</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="com.company.GUI.SuitPileView" target="com.company.GUI.GameModelListener">
+              <point x="0.0" y="-147.5" />
+              <point x="1106.5" y="81.0" />
+              <point x="924.5" y="81.0" />
+              <point x="28.5" y="25.5" />
+            </edge>
+            <edge source="com.company.GUI.TablePileView" target="com.company.GUI.GameModelListener">
+              <point x="0.0" y="-180.5" />
+              <point x="1655.5" y="71.0" />
+              <point x="981.5" y="71.0" />
+              <point x="85.5" y="25.5" />
+            </edge>
+            <edge source="com.company.GUI.DeckPileView" target="com.company.GUI.GameModelListener">
+              <point x="0.0" y="-103.5" />
+              <point x="685.5" y="81.0" />
+              <point x="867.5" y="81.0" />
+              <point x="-28.5" y="25.5" />
+            </edge>
+            <edge source="com.company.GUI.DiscardPileView" target="com.company.GUI.GameModelListener">
+              <point x="0.0" y="-147.5" />
+              <point x="264.5" y="71.0" />
+              <point x="810.5" y="71.0" />
+              <point x="-85.5" y="25.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.5201030927835052" x="451.4469772051536" y="390.3503468780971" />
+          <SelectedNodes>
+            <node>com.company.GUI.DiscardPileView</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///private/var/folders/lh/f613v_rd4w96x129w9nx2h6h0000gn/T/modules1.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MODULES</ID>
+          <OriginalElement />
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-264.5" y="-11.0" />
+          <SelectedNodes />
+          <Categories />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Card/Card_Interface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="165">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Card/CardStack_Interface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        <state relative-caret-position="405">
+          <caret line="31" column="15" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="31" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Card/GameModel.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Card/Card.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="281" column="5" lean-forward="true" selection-start-line="268" selection-start-column="4" selection-end-line="281" selection-end-column="5" />
-          <folding>
-            <element signature="method#addListener#0;class#GameModel#0" />
-            <element signature="method#notifyListeners#0;class#GameModel#0" />
-            <element signature="e#9594#9595#0" expanded="true" />
-            <element signature="e#9636#9637#0" expanded="true" />
-            <element signature="e#9677#9678#0" expanded="true" />
-            <element signature="e#9728#9729#0" expanded="true" />
-            <element signature="e#9958#9959#0" expanded="true" />
-            <element signature="e#9992#9993#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="357">
+          <caret line="88" column="9" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="88" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Card/CardStack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="86" column="9" lean-forward="true" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+        <state relative-caret-position="218">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/GameModelListener.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Card/DeckStack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        <state relative-caret-position="90">
+          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Card/DisCardStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Card/SuitStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Card/TableStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="34" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.company.Card">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.company.Card</OriginalElement>
+          <nodes>
+            <node x="0.0" y="646.0">com.company.Card.TableStack</node>
+            <node x="519.0" y="764.0">com.company.Card.CardImages</node>
+            <node x="1000.0" y="0.0">com.company.Card.GameModel</node>
+            <node x="378.0" y="0.0">com.company.Card.CardStack_Interface</node>
+            <node x="238.0" y="764.0">com.company.Card.Rank</node>
+            <node x="14.0" y="764.0">com.company.Card.Card_Interface</node>
+            <node x="367.0" y="764.0">com.company.Card.Suit</node>
+            <node x="386.0" y="301.0">com.company.Card.CardStack</node>
+            <node x="729.0" y="657.0">com.company.Card.SuitStack</node>
+            <node x="483.0" y="657.0">com.company.Card.DisCardStack</node>
+            <node x="0.0" y="1042.0">com.company.Card.Card</node>
+            <node x="351.0" y="668.0">com.company.Card.DeckStack</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="com.company.Card.DisCardStack" target="com.company.Card.CardStack">
+              <point x="0.0" y="-25.5" />
+              <point x="596.0" y="626.0" />
+              <point x="530.375" y="626.0" />
+              <point x="28.875" y="147.5" />
+            </edge>
+            <edge source="com.company.Card.SuitStack" target="com.company.Card.CardStack">
+              <point x="0.0" y="-25.5" />
+              <point x="842.0" y="616.0" />
+              <point x="588.125" y="616.0" />
+              <point x="86.625" y="147.5" />
+            </edge>
+            <edge source="com.company.Card.Card" target="com.company.Card.Card_Interface">
+              <point x="0.0" y="-115.0" />
+              <point x="0.0" y="114.0" />
+            </edge>
+            <edge source="com.company.Card.CardStack" target="com.company.Card.CardStack_Interface">
+              <point x="0.0" y="-147.5" />
+              <point x="0.0" y="125.5" />
+            </edge>
+            <edge source="com.company.Card.TableStack" target="com.company.Card.CardStack">
+              <point x="0.0" y="-36.5" />
+              <point x="165.5" y="616.0" />
+              <point x="414.875" y="616.0" />
+              <point x="-86.625" y="147.5" />
+            </edge>
+            <edge source="com.company.Card.DeckStack" target="com.company.Card.CardStack">
+              <point x="0.0" y="-14.5" />
+              <point x="407.0" y="626.0" />
+              <point x="472.625" y="626.0" />
+              <point x="-28.875" y="147.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.3882443928847641" x="36.72808764940237" y="598.1673306772909" />
+          <SelectedNodes>
+            <node>com.company.Card.GameModel</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.company.Card.GameModel">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.company.Card.GameModel</OriginalElement>
+          <nodes>
+            <node x="-27.780876494023914" y="-5.848605577689284">com.company.Card.GameModel</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.6839237057220708" x="-225.73904382470124" y="340.9163346613546" />
+          <SelectedNodes>
+            <node>com.company.Card.GameModel</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Card/GameModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="643">
+          <caret line="368" lean-forward="true" selection-end-line="374" selection-end-column="1" />
         </state>
       </provider>
     </entry>

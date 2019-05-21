@@ -20,7 +20,7 @@ public class Solitaire_GUI extends Application {
     private Mode_selection mode_selection = new Mode_selection();
     private DiscardPileView aDiscardPileView = new DiscardPileView();//初始化四个花色的弃牌堆数组
     private SuitPileView[] aSuitStacks = new SuitPileView[Suit.values().length];//花色堆
-    private CardPileView[] aStacks = new CardPileView[TablePile.values().length]; //初始化玩牌区的数组
+    private TablePileView[] aStacks = new TablePileView[TablePile.values().length]; //初始化玩牌区的数
     public static void main(String[] args) {
         launch(args);
     }
@@ -45,7 +45,7 @@ public class Solitaire_GUI extends Application {
         }
         for( TablePile index : TablePile.values() )
         {
-            aStacks[index.ordinal()] = new CardPileView(index);
+            aStacks[index.ordinal()] = new TablePileView(index);
             grid.add(aStacks[index.ordinal()], index.ordinal()+1, 1);
 
         }

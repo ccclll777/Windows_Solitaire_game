@@ -15,7 +15,6 @@ public   class CardStack implements CardStack_Interface{
     }
     //获取list的大小
     public int size() {
-
         return this.pokers_card.size();
     }
     //获取顶部卡片

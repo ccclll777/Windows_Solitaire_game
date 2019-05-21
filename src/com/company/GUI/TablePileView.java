@@ -9,7 +9,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.*;
 import javafx.scene.layout.StackPane;
-public class CardPileView extends StackPane implements GameModelListener
+public class TablePileView extends StackPane implements GameModelListener
 {
     private static final int PADDING = 5;
     private static final int Y_OFFSET = 17;
@@ -18,7 +18,7 @@ public class CardPileView extends StackPane implements GameModelListener
     private int aIndex;
     private static final String BORDER_STYLE = "-fx-border-color: lightgray;"
             + "-fx-border-width: 2.8;" + " -fx-border-radius: 10.0";
-    CardPileView(TablePile pIndex)
+    TablePileView(TablePile pIndex)
     {
         aIndex = pIndex.ordinal()+2;//返回枚举类的序数  2-8
         setPadding(new Insets(PADDING));

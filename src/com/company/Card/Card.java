@@ -14,8 +14,7 @@ public class Card implements Card_Interface{
     //方法为共有的
     //52张牌的初始化
       private static final Card[][] CARDS = new Card[Suit.values().length][];
-
-    // 初始化每一张牌的花色和大小，生成一个编号，以便可以通过编号获取相对应的卡牌
+      // 初始化每一张牌的花色和大小，生成一个编号，以便可以通过编号获取相对应的卡牌
     static
     {
         for( Suit suit : Suit.values() )
@@ -66,18 +65,14 @@ public class Card implements Card_Interface{
     }
     //根据编号获取对应的牌
     public static Card get(String pId)
-    {
-        if(pId != null)
+    { if(pId != null)
         {
             int id = Integer.parseInt(pId);
             return get(Rank.values()[id % Rank.values().length],
                     Suit.values()[id / Rank.values().length]);
         }
 
-            return null;
-
-
-    }
+            return null; }
     //根据花色和大小获取对应的牌
     public static Card get(Rank pRank, Suit pSuit)
     {
@@ -87,7 +82,6 @@ public class Card implements Card_Interface{
         }
 
             return null;
-
     }
     //获取牌的大小
     public Rank getRank() {

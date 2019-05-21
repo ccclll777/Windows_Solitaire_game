@@ -34,7 +34,7 @@ class DiscardPileView extends HBox implements GameModelListener
 		getChildren().clear();
 		if(GameModel.instance().getStack(1).size()>0)
 		{
-			Card cardView = GameModel.instance().getStack(1).peek();
+			Card cardView = GameModel.instance().getStack(	1).peek();
 			final ImageView image = new ImageView(cardImages.getCard(cardView));
 			getChildren().add(image);
 			setOnDragOver(createDragOverHandler(image, cardView));//当你拖动到目标上方的时候，会不停的执行。

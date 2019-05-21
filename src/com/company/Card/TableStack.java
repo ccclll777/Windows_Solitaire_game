@@ -10,8 +10,7 @@ public class TableStack extends CardStack {
         {//从顶部开始往下看 正面的卡牌，如果这个卡牌是正面的 并且他是我们要找的那张，就可以选择他
             for(int i = this.size() -1 ; i >= 0 ; i--)
             {
-
-                    if(this.peek(i).getRank() == pRank && this.peek(i).getSuit() == pSuit)
+                if(this.peek(i).getRank() == pRank && this.peek(i).getSuit() == pSuit)
                         return i;
             }
         }

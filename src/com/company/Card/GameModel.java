@@ -1,5 +1,4 @@
 package com.company.Card;
-import com.company.GUI.CardPileView;
 import com.company.GUI.GameModelListener;
 
 import java.util.ArrayList;
@@ -129,8 +128,6 @@ public final class  GameModel {
 
             return temp_stack;
 
-
-
     }
     //判断 移动是否合法
     public boolean isLegalMove(Card pCard,int aIndex )
@@ -217,7 +214,8 @@ public final class  GameModel {
     }
     //移动牌堆
         public boolean moveCard(CardStack from,int aIndex)
-        { if
+        {
+            if
                 (aIndex>=2 && aIndex<=8)
             {
                 TableStack to = (TableStack)this.getStack(aIndex);
@@ -237,11 +235,9 @@ public final class  GameModel {
 
                         this.getStack(aIndex).push(from);
                         pop_from(from);
-                    setRegret_stack();
+//                    setRegret_stack();
                         notifyListeners();
-
-
-        }
+   }
             }
             else  if(aIndex>=9 && aIndex<= 12)
             {
@@ -251,7 +247,7 @@ public final class  GameModel {
                     this.getStack(aIndex).push(from);
                     pop_from(from);
                     notifyListeners();
-                    setRegret_stack();
+//                    setRegret_stack();
                 return true;
 
                  }
@@ -259,7 +255,7 @@ public final class  GameModel {
                      {
                          this.getStack(aIndex).push(from);
                          pop_from(from);
-                         setRegret_stack();
+//                         setRegret_stack();
                          notifyListeners();
                      }
             }
