@@ -32,7 +32,7 @@ public class Regret_game extends HBox {
             public void handle(MouseEvent pEvent)
             {
                 ((Button)pEvent.getSource()).setStyle(BUTTON_STYLE_PRESSED);
-                GameModel.instance().getRegret_stack();
+//                GameModel.instance().getRegret_stack();
             }
         });
 
@@ -42,7 +42,7 @@ public class Regret_game extends HBox {
             public void handle(MouseEvent pEvent)
             {
                 ((Button)pEvent.getSource()).setStyle(BUTTON_STYLE_NORMAL);
-                GameModel.instance().getRegret_stack();
+//                GameModel.instance().getRegret_stack();
 
             }
         });

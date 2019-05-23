@@ -113,6 +113,7 @@ class DeckPileView extends HBox implements GameModelListener
 	}
 
 
+
 	@Override
 	public void gameStateChanged() {
 		if( GameModel.instance().getStack(0).isEmpty() )

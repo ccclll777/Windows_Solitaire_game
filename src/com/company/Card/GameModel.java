@@ -10,7 +10,6 @@ public final class  GameModel {
 
     private static final GameModel INSTANCE = new GameModel();
      private  ArrayList<CardStack> card_Stacks ;//存放桌面上的所有牌堆
-    private Stack<ArrayList> regret_stack;
     private int fromIndex;
     private DeckStack deck_Stack;//0
     private DisCardStack disCard_Stack;//1
@@ -25,7 +24,6 @@ public final class  GameModel {
     }
     public void init()
     {
-        this.regret_stack = new Stack<ArrayList>();
         this.table_Stacks = new  TableStack[7];
         for(int i = 0 ; i < table_Stacks.length ; i++)
         {
@@ -224,7 +222,6 @@ public final class  GameModel {
                     this.getStack(aIndex).push(from);
                     pop_from(from);
                     notifyListeners();
-                    setRegret_stack();
                         return true;
 
 
@@ -235,7 +232,6 @@ public final class  GameModel {
 
                         this.getStack(aIndex).push(from);
                         pop_from(from);
-//                    setRegret_stack();
                         notifyListeners();
    }
             }
@@ -247,7 +243,6 @@ public final class  GameModel {
                     this.getStack(aIndex).push(from);
                     pop_from(from);
                     notifyListeners();
-//                    setRegret_stack();
                 return true;
 
                  }
@@ -255,7 +250,6 @@ public final class  GameModel {
                      {
                          this.getStack(aIndex).push(from);
                          pop_from(from);
-//                         setRegret_stack();
                          notifyListeners();
                      }
             }
@@ -332,7 +326,6 @@ public final class  GameModel {
     {
 
         CardStack temp_stack =  GameModel.instance().getSubStack(pCard, aIndex);
-        System.out.println(temp_stack.size());
         String result = "";
         Card temp_card ;
         for(int i = 0 ; i< temp_stack.size() ; i++)
@@ -352,19 +345,6 @@ public final class  GameModel {
 
     public void setFromIndex(int fromIndex) {
         this.fromIndex = fromIndex;
-    }
-
-    public void setRegret_stack()
-    {
-        regret_stack.push(this.card_Stacks);
-    }
-
-    public void getRegret_stack()
-    {
-        this.card_Stacks.clear();
-        this.card_Stacks = regret_stack.peek();
-        regret_stack.pop();
-        notifyListeners();
     }
 
     public void setLevel(String level)

@@ -1,10 +1,16 @@
 package com.company.GUI;
 
+import com.company.Card.GameModel;
 import com.company.Card.Suit;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.layout.GridPane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import static javafx.application.Application.launch;
@@ -16,7 +22,6 @@ public class Solitaire_GUI extends Application {
     private static final String TITLE = "Solitaire";
     private DeckPileView aDeckView = new DeckPileView();// 待用堆
     private Restart restart = new Restart();
-    private Regret_game regret_game  = new Regret_game();
     private Mode_selection mode_selection = new Mode_selection();
     private DiscardPileView aDiscardPileView = new DiscardPileView();//初始化四个花色的弃牌堆数组
     private SuitPileView[] aSuitStacks = new SuitPileView[Suit.values().length];//花色堆
@@ -48,6 +53,15 @@ public class Solitaire_GUI extends Application {
             aStacks[index.ordinal()] = new TablePileView(index);
             grid.add(aStacks[index.ordinal()], index.ordinal()+1, 1);
 
+        }
+        if(GameModel.instance().getStack(9).size() == 13 &&GameModel.instance().getStack(10).size() == 13&&GameModel.instance().getStack(11).size() == 13&&GameModel.instance().getStack(12).size() == 13)
+        {
+            Text t = new Text();
+            t.setText("游戏通关成功!");
+            t.setFont(Font.font ("Verdana"));
+            t.setFill(Color.BLACK);
+
+            grid.add(t,4,9);
         }
         pPrimaryStage.setResizable(false);
         pPrimaryStage.setScene(new Scene(grid, WIDTH, HEIGHT));
