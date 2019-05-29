@@ -19,7 +19,7 @@ public class Mode_selection extends HBox {
     private static final String BUTTON_STYLE_PRESSED = "-fx-background-color: transparent; -fx-padding: 6 4 4 6;";
     private static final int IMAGE_NEW_LINE_WIDTH = 10;
     private static final int IMAGE_FONT_SIZE = 15;
-    private static CardImages cardImages = new CardImages();
+//    private static CardImages cardImages = new CardImages();
     private String level = "low";
 
     Mode_selection()
@@ -68,8 +68,8 @@ public class Mode_selection extends HBox {
     private Canvas createNewGameImage()
     {
 
-        double width = cardImages.getBack().getWidth();
-        double height = cardImages.getBack().getHeight();
+        double width =  CardImages.getBack().getWidth();
+        double height =  CardImages.getBack().getHeight();
         Canvas canvas = new Canvas( width, height );
         GraphicsContext context = canvas.getGraphicsContext2D();
         context.setStroke(Color.DARKGREEN);

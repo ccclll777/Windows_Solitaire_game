@@ -50,11 +50,11 @@ class DeckPileView extends HBox implements GameModelListener
     private static final String BUTTON_STYLE_PRESSED = "-fx-background-color: transparent; -fx-padding: 6 4 4 6;";
     private static final int IMAGE_NEW_LINE_WIDTH = 10;
     private static final int IMAGE_FONT_SIZE = 15;
-	private static CardImages cardImages = new CardImages();
+//	private static CardImages cardImages = new CardImages();
 	DeckPileView()
 	{
 		final Button button = new Button();
-		button.setGraphic(new ImageView(cardImages.getBack()));
+		button.setGraphic(new ImageView(CardImages.getBack()));
 		button.setStyle(BUTTON_STYLE_NORMAL);
 
 		button.setOnMousePressed(new EventHandler<MouseEvent>()
@@ -97,8 +97,8 @@ class DeckPileView extends HBox implements GameModelListener
 	
 	private Canvas createNewGameImage()
 	{
-		double width = cardImages.getBack().getWidth();
-		double height = cardImages.getBack().getHeight();
+		double width = CardImages.getBack().getWidth();
+		double height = CardImages.getBack().getHeight();
 		Canvas canvas = new Canvas( width, height );
 		GraphicsContext context = canvas.getGraphicsContext2D();
 		context.setStroke(Color.DARKGREEN);
@@ -122,7 +122,7 @@ class DeckPileView extends HBox implements GameModelListener
 		}
 		else
 		{
-			((Button)getChildren().get(0)).setGraphic(new ImageView(cardImages.getBack()));
+			((Button)getChildren().get(0)).setGraphic(new ImageView(CardImages.getBack()));
 		}
 	}
 }

@@ -33,7 +33,7 @@ public class Solitaire_GUI extends Application {
     {
         pPrimaryStage.setTitle(TITLE );//设定标题
         GridPane grid = new GridPane();//布局方式
-        grid.setStyle("-fx-background-color: green;");
+        grid.setStyle("-fx-background-color: write;");
         grid.setHgap(MARGIN_OUTER);
         grid.setVgap(MARGIN_OUTER);
         grid.setPadding(new Insets(MARGIN_OUTER));//设置边界为10

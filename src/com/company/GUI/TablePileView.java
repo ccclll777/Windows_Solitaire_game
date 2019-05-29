@@ -14,7 +14,7 @@ public class TablePileView extends StackPane implements GameModelListener
     private static final int PADDING = 5;
     private static final int Y_OFFSET = 17;
     private static final String SEPARATOR = ";";
-    private static CardImages cardImages = new CardImages();
+//    private static CardImages cardImages = new CardImages();
     private int aIndex;
     private static final String BORDER_STYLE = "-fx-border-color: lightgray;"
             + "-fx-border-width: 2.8;" + " -fx-border-radius: 10.0";
@@ -24,7 +24,7 @@ public class TablePileView extends StackPane implements GameModelListener
         setPadding(new Insets(PADDING));
         setStyle(BORDER_STYLE);
         setAlignment(Pos.TOP_CENTER);
-        final ImageView image = new ImageView(cardImages.getBack());
+        final ImageView image = new ImageView(CardImages.getBack());
         image.setVisible(false);
         getChildren().add(image);
         buildLayout();
@@ -33,7 +33,7 @@ public class TablePileView extends StackPane implements GameModelListener
     }
     private static Image getImage(Card pCard)
     {
-            return cardImages.getCard(pCard);
+            return CardImages.getCard(pCard);
 
     }
     private void buildLayout()
@@ -42,7 +42,7 @@ public class TablePileView extends StackPane implements GameModelListener
         TableStack stack = (TableStack) GameModel.instance().getStack(aIndex);
         if( stack.isEmpty() )
         {
-            ImageView image = new ImageView(cardImages.getBack());
+            ImageView image = new ImageView(CardImages.getBack());
             image.setVisible(false);
             getChildren().add(image);
             return;
@@ -63,7 +63,7 @@ public class TablePileView extends StackPane implements GameModelListener
             else
 
             {
-                final ImageView image = new ImageView(cardImages.getBack());
+                final ImageView image = new ImageView(CardImages.getBack());
                 image.setTranslateY(Y_OFFSET * i);
                 getChildren().add(image);
             }

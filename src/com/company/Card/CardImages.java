@@ -5,11 +5,11 @@ import javafx.scene.image.Image;
 public class CardImages {
     //获取卡牌对应的照片
 
-    public Image getCard(Card pCard)
+    public static Image getCard(Card pCard)
     {
         if(pCard != null)
         {
-            Image image = new Image(getClass().getResourceAsStream("../resources/"+pCard.getSuit()+pCard.getRank()+".gif"));
+            Image image = new Image(CardImages.class.getResourceAsStream("../resources/"+pCard.getSuit()+pCard.getRank()+".gif"));
             return image;
         }
 
@@ -18,9 +18,9 @@ public class CardImages {
 
     }
 
-    public Image getBack()
+    public static Image getBack()
     {
-        Image image = new Image(getClass().getResourceAsStream("../resources/back.jpg"));
+        Image image = new Image(CardImages.class.getResourceAsStream("../resources/back.jpg"));
         return image;
     }
 

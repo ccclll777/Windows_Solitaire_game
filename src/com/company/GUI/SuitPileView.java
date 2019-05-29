@@ -13,13 +13,13 @@ public class SuitPileView extends StackPane  implements GameModelListener
     private static final int PADDING = 5;
     private static final String BORDER_STYLE = "-fx-border-color: lightgray;"
             + "-fx-border-width: 3;" + " -fx-border-radius: 10.0";
-    private static CardImages cardImages = new CardImages();
+//    private static CardImages cardImages = new CardImages();
     private int  aIndex;
     SuitPileView(SuitPile pIndex)
     {   aIndex = pIndex.ordinal()+9;//9-12
         setPadding(new Insets(PADDING));
         setStyle(BORDER_STYLE);
-        final ImageView image = new ImageView(cardImages.getBack());
+        final ImageView image = new ImageView(CardImages.getBack());
         image.setVisible(false);
         getChildren().add(image);
         Card cardView = null;
@@ -37,7 +37,7 @@ public class SuitPileView extends StackPane  implements GameModelListener
         if(GameModel.instance().getStack(aIndex).size() >0)
         {
             Card cardView = GameModel.instance().getStack(aIndex).peek();
-            final ImageView image = new ImageView(cardImages.getCard(cardView));
+            final ImageView image = new ImageView(CardImages.getCard(cardView));
             getChildren().add(image);
             setOnDragOver(createDragOverHandler(image, cardView));//当你拖动到目标上方的时候，会不停的执行。
             setOnDragEntered(createDragEnteredHandler(image, cardView));// 当你拖动到目标控件的时候，会执行这个事件回调。

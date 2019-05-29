@@ -15,7 +15,7 @@ import javafx.scene.layout.HBox;
 class DiscardPileView extends HBox implements GameModelListener
 {
 	private static final int PADDING = 5;
-	private static CardImages cardImages = new CardImages();
+//	private static CardImages cardImages = new CardImages();
 
 	private static final String SEPARATOR = ";";
 	private int aIndex;
@@ -23,7 +23,7 @@ class DiscardPileView extends HBox implements GameModelListener
 	{
 		this.aIndex = 1;
 		setPadding(new Insets(PADDING));
-    	final ImageView image = new ImageView(cardImages.getBack());
+    	final ImageView image = new ImageView(CardImages.getBack());
     	image.setVisible(false);
        	getChildren().add(image);
 		buildLayout();
@@ -35,7 +35,7 @@ class DiscardPileView extends HBox implements GameModelListener
 		if(GameModel.instance().getStack(1).size()>0)
 		{
 			Card cardView = GameModel.instance().getStack(	1).peek();
-			final ImageView image = new ImageView(cardImages.getCard(cardView));
+			final ImageView image = new ImageView(CardImages.getCard(cardView));
 			getChildren().add(image);
 			setOnDragOver(createDragOverHandler(image, cardView));//当你拖动到目标上方的时候，会不停的执行。
 			setOnDragEntered(createDragEnteredHandler(image, cardView));// 当你拖动到目标控件的时候，会执行这个事件回调。
