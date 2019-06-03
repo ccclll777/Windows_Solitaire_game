@@ -2,39 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="849ff14d-4d9e-40f1-a56b-44c7d762cf07" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/resources/bk2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/Card/GameModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/Card/GameModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/DeckPileView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/DeckPileView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/DeckPileView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/DeckPileView$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/DeckPileView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/DeckPileView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/DiscardPileView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/DiscardPileView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/DiscardPileView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/DiscardPileView$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/DiscardPileView$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/DiscardPileView$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/DiscardPileView$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/DiscardPileView$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/DiscardPileView$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/DiscardPileView$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/DiscardPileView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/DiscardPileView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/Mode_selection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/Mode_selection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/Restart$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/Restart$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/Restart$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/Restart$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/Restart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/Restart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/Solitaire_GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/Solitaire_GUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/TablePileView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/TablePileView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/TablePileView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/TablePileView$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/TablePileView$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/TablePileView$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/TablePileView$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/TablePileView$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/TablePileView$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/TablePileView$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/TablePileView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/GUI/TablePileView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/resources/123.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SolitairePlus/com/company/resources/123.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Card/CardImages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Card/CardImages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Card/GameModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Card/GameModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/GUI/DeckPileView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/GUI/DeckPileView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/GUI/DiscardPileView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/GUI/DiscardPileView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/GUI/Mode_selection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/GUI/Mode_selection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/GUI/Regret_game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/GUI/Regret_game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/GUI/Restart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/GUI/Restart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/GUI/Solitaire_GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/GUI/Solitaire_GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/GUI/TablePileView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/GUI/TablePileView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/resources/123.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/resources/123.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/GUI/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/GUI/test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,17 +22,38 @@
       <file leaf-file-name="Solitaire_GUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/GUI/Solitaire_GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="34" column="21" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="21" />
+            <state relative-caret-position="134">
+              <caret line="29" column="56" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Regret_game.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/GUI/Regret_game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="34" column="18" lean-forward="true" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mode_selection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/GUI/Mode_selection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/GUI/test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="43" column="49" lean-forward="true" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+            <state relative-caret-position="884">
+              <caret line="89" column="62" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="89" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,9 +66,13 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="123.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/resources/123.png">
-          <provider selected="true" editor-type-id="images" />
+      <file leaf-file-name="Restart.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/GUI/Restart.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="CardStack.java" pinned="false" current-in-tab="false">
@@ -89,45 +87,8 @@
       <file leaf-file-name="DeckPileView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/GUI/DeckPileView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="94" column="20" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
-              <folding>
-                <element signature="e#2276#2443#0" expanded="true" />
-                <element signature="e#2442#2443#0" expanded="true" />
-                <element signature="e#2475#2942#0" expanded="true" />
-                <element signature="e#2941#2942#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TableStack.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Card/TableStack.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Card/GameModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="226" column="32" selection-start-line="226" selection-start-column="32" selection-end-line="226" selection-end-column="32" />
-              <folding>
-                <element signature="e#648#667#0" expanded="true" />
-                <element signature="e#3343#3344#0" expanded="true" />
-                <element signature="e#3393#3394#0" expanded="true" />
-                <element signature="e#3449#3450#0" expanded="true" />
-                <element signature="e#3480#3481#0" expanded="true" />
-                <element signature="e#10335#10336#0" expanded="true" />
-                <element signature="e#10377#10378#0" expanded="true" />
-                <element signature="e#10423#10424#0" expanded="true" />
-                <element signature="e#10457#10458#0" expanded="true" />
-                <element signature="e#10492#10493#0" expanded="true" />
-                <element signature="e#10525#10526#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="365">
+              <caret line="113" column="41" selection-start-line="113" selection-start-column="41" selection-end-line="113" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -136,7 +97,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/company/Card/CardImages.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" column="129" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="129" />
+              <caret line="11" column="129" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="129" />
             </state>
           </provider>
         </entry>
@@ -145,7 +106,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/company/GUI/DiscardPileView.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="400">
-              <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
+              <caret line="103" selection-start-line="103" selection-end-line="103" />
             </state>
           </provider>
         </entry>
@@ -184,17 +145,17 @@
         <option value="$PROJECT_DIR$/src/com/company/Card/SuitStack.java" />
         <option value="$PROJECT_DIR$/src/com/company/Card/TableStack.java" />
         <option value="$PROJECT_DIR$/src/com/company/GUI/SuitPileView.java" />
-        <option value="$PROJECT_DIR$/src/com/company/GUI/Regret_game.java" />
         <option value="$PROJECT_DIR$/src/com/company/Card/CardImages.java" />
-        <option value="$PROJECT_DIR$/src/com/company/GUI/Restart.java" />
-        <option value="$PROJECT_DIR$/src/com/company/GUI/Mode_selection.java" />
         <option value="$PROJECT_DIR$/src/com/company/GUI/TablePileView.java" />
         <option value="$PROJECT_DIR$/src/com/company/GUI/back.css" />
-        <option value="$PROJECT_DIR$/src/com/company/GUI/DeckPileView.java" />
         <option value="$PROJECT_DIR$/src/com/company/GUI/DiscardPileView.java" />
         <option value="$PROJECT_DIR$/src/com/company/Card/GameModel.java" />
-        <option value="$PROJECT_DIR$/src/com/company/GUI/Solitaire_GUI.java" />
         <option value="$PROJECT_DIR$/src/com/company/GUI/test.java" />
+        <option value="$PROJECT_DIR$/src/com/company/GUI/DeckPileView.java" />
+        <option value="$PROJECT_DIR$/src/com/company/GUI/Restart.java" />
+        <option value="$PROJECT_DIR$/src/com/company/GUI/Solitaire_GUI.java" />
+        <option value="$PROJECT_DIR$/src/com/company/GUI/Mode_selection.java" />
+        <option value="$PROJECT_DIR$/src/com/company/GUI/Regret_game.java" />
       </list>
     </option>
   </component>
@@ -250,13 +211,6 @@
               <item name="company" type="462c0819:PsiDirectoryNode" />
               <item name="GUI" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SolitairePlus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SolitairePlus" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -293,7 +247,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.test">
+  <component name="RunManager" selected="Application.Solitaire_GUI">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="SolitairePlus" />
@@ -328,8 +282,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.test" />
         <item itemvalue="Application.Solitaire_GUI" />
+        <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
   </component>
@@ -362,15 +316,16 @@
       <workItem from="1559116904818" duration="776000" />
       <workItem from="1559127685027" duration="315000" />
       <workItem from="1559357015493" duration="4702000" />
-      <workItem from="1559472791360" duration="18188000" />
+      <workItem from="1559472791360" duration="20186000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86466000" />
+    <option name="totallyTimeSpent" value="88464000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -382,11 +337,11 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3272727" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3272727" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18884121" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18884121" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -549,27 +504,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/resources/HEARTSTWO.gif">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/Regret_game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="16" column="88" selection-start-line="16" selection-start-column="77" selection-end-line="16" selection-end-column="88" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/Mode_selection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="80" column="35" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
-          <folding>
-            <element signature="e#1857#2084#0" expanded="true" />
-            <element signature="e#2083#2084#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="uml://JAVA/com.company.GUI">
       <provider selected="true" editor-type-id="UmlEditorProvider">
@@ -931,13 +865,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/Restart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="72" column="5" lean-forward="true" selection-start-line="55" selection-start-column="4" selection-end-line="72" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/GUI/TablePile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1059,13 +986,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/Solitaire_GUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="34" column="21" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/resources/123.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1075,20 +995,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/company/GUI/DiscardPileView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
-          <caret line="103" lean-forward="true" selection-start-line="103" selection-end-line="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/DeckPileView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="94" column="20" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
-          <folding>
-            <element signature="e#2276#2443#0" expanded="true" />
-            <element signature="e#2442#2443#0" expanded="true" />
-            <element signature="e#2475#2942#0" expanded="true" />
-            <element signature="e#2941#2942#0" expanded="true" />
-          </folding>
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
         </state>
       </provider>
     </entry>
@@ -1102,14 +1009,52 @@
     <entry file="file://$PROJECT_DIR$/src/com/company/Card/CardImages.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="129" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="129" />
+          <caret line="11" column="129" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="129" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/GUI/test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="43" column="49" lean-forward="true" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+        <state relative-caret-position="884">
+          <caret line="89" column="62" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="89" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/DeckPileView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="113" column="41" selection-start-line="113" selection-start-column="41" selection-end-line="113" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/Mode_selection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/Solitaire_GUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="29" column="56" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/Restart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GUI/Regret_game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="34" column="18" lean-forward="true" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1173,6 +1118,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

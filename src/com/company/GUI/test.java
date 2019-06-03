@@ -25,9 +25,21 @@ import javafx.stage.Stage;
 
 public class test extends Application {
 
+    private static final int WIDTH = 900;
+    private static final int HEIGHT = 600;
+    private static final int MARGIN_OUTER = 15;
+    private static final String TITLE = "Solitaire";
+    private DeckPileView aDeckView = new DeckPileView();// 待用堆
+    private Restart restart = new Restart();
+    private Mode_selection mode_selection = new Mode_selection();
+    private DiscardPileView aDiscardPileView = new DiscardPileView();//初始化四个花色的弃牌堆数组
+    private SuitPileView[] aSuitStacks = new SuitPileView[Suit.values().length];//花色堆
+    private TablePileView[] aStacks = new TablePileView[TablePile.values().length]; //初始化玩牌区的数
     public static void main(String[] args) {
         launch(args);
     }
+
+
     public void start(final Stage primaryStage)//启动函数
     { BorderPane root = new BorderPane();
         Scene scene = new Scene(root, 300, 250, Color.WHITE);

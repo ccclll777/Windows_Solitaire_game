@@ -389,5 +389,9 @@ public final class  GameModel {
     {
         return this.level;
     }
+    public void getRegret_stack()
+    {
+        
+    }
 
 }

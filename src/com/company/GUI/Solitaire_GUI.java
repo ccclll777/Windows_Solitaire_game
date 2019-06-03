@@ -4,9 +4,12 @@ import com.company.Card.GameModel;
 import com.company.Card.Suit;
 import com.sun.java_cup.internal.runtime.Scanner;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
+import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Font;
@@ -24,6 +27,7 @@ public class Solitaire_GUI extends Application {
     private DeckPileView aDeckView = new DeckPileView();// 待用堆
     private Restart restart = new Restart();
     private Mode_selection mode_selection = new Mode_selection();
+    private Regret_game regret_game = new Regret_game();
     private DiscardPileView aDiscardPileView = new DiscardPileView();//初始化四个花色的弃牌堆数组
     private SuitPileView[] aSuitStacks = new SuitPileView[Suit.values().length];//花色堆
     private TablePileView[] aStacks = new TablePileView[TablePile.values().length]; //初始化玩牌区的数
@@ -42,7 +46,7 @@ public class Solitaire_GUI extends Application {
         grid.add(aDiscardPileView, 2, 0);//将节点竖直放置
         grid.add(restart,8,9);//重新开始游戏
         grid.add(mode_selection,7,9);
-//        grid.add(regret_game,7,9);//悔牌
+        grid.add(regret_game,6,9);//悔牌
 
         for( SuitPile index : SuitPile.values() )
         {
@@ -68,6 +72,7 @@ public class Solitaire_GUI extends Application {
 
         Scene scene = new Scene(grid, WIDTH, HEIGHT);
         scene.getStylesheets().addAll(this.getClass().getResource("back.css").toExternalForm());
+
         pPrimaryStage.setScene( scene);
 
         pPrimaryStage.show();

@@ -60,7 +60,7 @@ public class Restart extends HBox {
         double height = CardImages.getBack().getHeight();
         Canvas canvas = new Canvas( width, height );
         GraphicsContext context = canvas.getGraphicsContext2D();
-        context.setStroke(Color.WHITE);
+        context.setFill(Color.DARKKHAKI);
         context.setLineWidth(IMAGE_NEW_LINE_WIDTH);
         context.strokeOval(width/4, height/2-width/4 + IMAGE_FONT_SIZE, width/2, width/2);
         context.setTextAlign(TextAlignment.CENTER);
