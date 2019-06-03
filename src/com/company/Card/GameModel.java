@@ -4,7 +4,6 @@ import com.company.GUI.GameModelListener;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import java.util.Stack;
 
 public final class  GameModel {
 
@@ -210,6 +209,41 @@ public final class  GameModel {
         notifyListeners();
 
     }
+    public  void Desc_to_DisCard_3()
+    {
+        if(this.getStack(0).size()>=3)
+        {
+            for(int i = 0 ; i <3 ; i++)
+            {
+                Card temp_card = this.getStack(0).peek();
+                this.getStack(1).init(temp_card);
+                this.getStack(0).pop();
+                System.out.println(temp_card .getRank());
+
+            }
+        }
+        else if(this.getStack(0).size() ==2)
+        {
+            for(int i = 0 ; i <2 ; i++)
+            {
+                Card temp_card = this.getStack(0).peek();
+                this.getStack(1).init(temp_card);
+                this.getStack(0).pop();
+                System.out.println(temp_card .getRank());
+
+            }
+        }
+        else
+        {
+            Card temp_card = this.getStack(0).peek();
+            this.getStack(1).init(temp_card);
+            this.getStack(0).pop();
+        }
+
+        notifyListeners();
+
+    }
+
     //移动牌堆
         public boolean moveCard(CardStack from,int aIndex)
         {
@@ -350,6 +384,10 @@ public final class  GameModel {
     public void setLevel(String level)
     {
         this.level = level;
+    }
+    public String getLevel()
+    {
+        return this.level;
     }
 
 }

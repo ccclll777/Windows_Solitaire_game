@@ -2,6 +2,7 @@ package com.company.GUI;
 
 import com.company.Card.GameModel;
 import com.company.Card.Suit;
+import com.sun.java_cup.internal.runtime.Scanner;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
@@ -33,7 +34,7 @@ public class Solitaire_GUI extends Application {
     {
         pPrimaryStage.setTitle(TITLE );//设定标题
         GridPane grid = new GridPane();//布局方式
-        grid.setStyle("-fx-background-color: write;");
+        grid.setId("pane");
         grid.setHgap(MARGIN_OUTER);
         grid.setVgap(MARGIN_OUTER);
         grid.setPadding(new Insets(MARGIN_OUTER));//设置边界为10
@@ -64,7 +65,11 @@ public class Solitaire_GUI extends Application {
             grid.add(t,4,9);
         }
         pPrimaryStage.setResizable(false);
-        pPrimaryStage.setScene(new Scene(grid, WIDTH, HEIGHT));
+
+        Scene scene = new Scene(grid, WIDTH, HEIGHT);
+        scene.getStylesheets().addAll(this.getClass().getResource("back.css").toExternalForm());
+        pPrimaryStage.setScene( scene);
+
         pPrimaryStage.show();
     }
 }

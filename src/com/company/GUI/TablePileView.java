@@ -14,7 +14,6 @@ public class TablePileView extends StackPane implements GameModelListener
     private static final int PADDING = 5;
     private static final int Y_OFFSET = 17;
     private static final String SEPARATOR = ";";
-//    private static CardImages cardImages = new CardImages();
     private int aIndex;
     private static final String BORDER_STYLE = "-fx-border-color: lightgray;"
             + "-fx-border-width: 2.8;" + " -fx-border-radius: 10.0";
@@ -29,11 +28,6 @@ public class TablePileView extends StackPane implements GameModelListener
         getChildren().add(image);
         buildLayout();
         GameModel.instance().addListener(this);
-
-    }
-    private static Image getImage(Card pCard)
-    {
-            return CardImages.getCard(pCard);
 
     }
     private void buildLayout()
@@ -51,7 +45,7 @@ public class TablePileView extends StackPane implements GameModelListener
         {
             Card cardView = stack.peek(i);
             if(cardView.isFaceUp() == true)
-            { final ImageView image = new ImageView(getImage(cardView));
+            { final ImageView image = new ImageView(CardImages.getCard(cardView));
                 image.setTranslateY(Y_OFFSET * i);
                 getChildren().add(image);
                 setOnDragOver(createDragOverHandler(image, cardView));//当你拖动到目标上方的时候，会不停的执行。

@@ -72,13 +72,13 @@ public class Mode_selection extends HBox {
         double height =  CardImages.getBack().getHeight();
         Canvas canvas = new Canvas( width, height );
         GraphicsContext context = canvas.getGraphicsContext2D();
-        context.setStroke(Color.DARKGREEN);
+        context.setStroke(Color.WHITE);
 
         context.setLineWidth(IMAGE_NEW_LINE_WIDTH);
         context.strokeOval(width/4, height/2-width/4 + IMAGE_FONT_SIZE, width/2, width/2);
         context.setTextAlign(TextAlignment.CENTER);
         context.setTextBaseline(VPos.CENTER);
-        context.setFill(Color.DARKKHAKI);
+        context.setFill(Color.WHITE);
         context.setFont(Font.font(Font.getDefault().getName(), IMAGE_FONT_SIZE));
         if(level == "low")
         {

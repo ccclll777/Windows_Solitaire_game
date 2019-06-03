@@ -24,6 +24,8 @@ public class Restart extends HBox {
     {
 
         final Button button = new Button();
+        button.setMaxHeight(10);
+        button.setMaxWidth(15);
         button.setGraphic(createNewGameImage());
         button.setStyle(BUTTON_STYLE_NORMAL);
 
@@ -58,7 +60,7 @@ public class Restart extends HBox {
         double height = CardImages.getBack().getHeight();
         Canvas canvas = new Canvas( width, height );
         GraphicsContext context = canvas.getGraphicsContext2D();
-        context.setStroke(Color.DARKGREEN);
+        context.setStroke(Color.WHITE);
         context.setLineWidth(IMAGE_NEW_LINE_WIDTH);
         context.strokeOval(width/4, height/2-width/4 + IMAGE_FONT_SIZE, width/2, width/2);
         context.setTextAlign(TextAlignment.CENTER);

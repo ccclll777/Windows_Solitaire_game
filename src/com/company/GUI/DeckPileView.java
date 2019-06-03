@@ -55,6 +55,7 @@ class DeckPileView extends HBox implements GameModelListener
 	{
 		final Button button = new Button();
 		button.setGraphic(new ImageView(CardImages.getBack()));
+//		button.setGraphic(new ImageView(new Image(CardImages.class.getResourceAsStream("../resources/777.jpg"))));
 		button.setStyle(BUTTON_STYLE_NORMAL);
 
 		button.setOnMousePressed(new EventHandler<MouseEvent>()
@@ -86,7 +87,16 @@ class DeckPileView extends HBox implements GameModelListener
 				}
 				else
 				{
-					GameModel.instance().Desc_to_DisCard();
+
+					if(GameModel.instance().getLevel() == "high")
+					{
+						GameModel.instance().Desc_to_DisCard();
+					}
+					if(GameModel.instance().getLevel() == "low")
+					{
+						GameModel.instance().Desc_to_DisCard_3();
+					}
+
 				}
 			}
 		});
@@ -123,6 +133,7 @@ class DeckPileView extends HBox implements GameModelListener
 		else
 		{
 			((Button)getChildren().get(0)).setGraphic(new ImageView(CardImages.getBack()));
+//			((Button)getChildren().get(0)).setGraphic(new ImageView(new Image(CardImages.class.getResourceAsStream("../resources/777.jpg"))));
 		}
 	}
 }
