@@ -72,6 +72,7 @@ class DeckPileView extends HBox implements GameModelListener
 			@Override
 			public void handle(MouseEvent pEvent)
 			{
+				GameModel.instance().store();
 				((Button)pEvent.getSource()).setStyle(BUTTON_STYLE_NORMAL);
 				if( GameModel.instance().getStack(0).isEmpty() )
 				{

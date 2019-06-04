@@ -4,16 +4,23 @@ import com.company.GUI.GameModelListener;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.Stack;
 
-public final class  GameModel {
+public  class  GameModel {
 
     private static final GameModel INSTANCE = new GameModel();
      private  ArrayList<CardStack> card_Stacks ;//存放桌面上的所有牌堆
+    private  ArrayList<CardStack> regret_stack ;
+
     private int fromIndex;
     private DeckStack deck_Stack;//0
     private DisCardStack disCard_Stack;//1
     private TableStack[] table_Stacks;//2-8
     private SuitStack[] suit_Stacks;//9-12
+    private DeckStack regret_deck_Stack;//0
+    private DisCardStack regret_disCard_Stack;//1
+    private TableStack[] regret_table_Stacks;//2-8
+    private SuitStack[] regret_suit_Stacks;//9-12
     private static final String SEPARATOR = ";";
     private String level = "low";
     private final List<GameModelListener> aListeners = new ArrayList<GameModelListener>();
@@ -23,77 +30,78 @@ public final class  GameModel {
     }
     public void init()
     {
+        this.regret_stack = new ArrayList<CardStack>();
         this.table_Stacks = new  TableStack[7];
         for(int i = 0 ; i < table_Stacks.length ; i++)
-        {
-            this.table_Stacks[i] = new TableStack();
-        }
+    {
+        this.table_Stacks[i] = new TableStack();
+    }
         this.deck_Stack = new DeckStack();
         this.disCard_Stack = new DisCardStack();
         this.suit_Stacks = new SuitStack[4];
         for(int i = 0 ; i< suit_Stacks.length ; i++)
-        {
-            this.suit_Stacks[i] = new SuitStack();
-        }
+    {
+        this.suit_Stacks[i] = new SuitStack();
+    }
         this.card_Stacks = new ArrayList<CardStack>();
         this.card_Stacks.add(this.deck_Stack);//0
         this.card_Stacks.add(this.disCard_Stack);//1
         for(int i = 0 ; i < table_Stacks.length ; i ++)
-        {
-            this.card_Stacks.add(this.table_Stacks[i]);//2-8
-        }
+    {
+        this.card_Stacks.add(this.table_Stacks[i]);//2-8
+    }
         for(int i = 0 ; i < suit_Stacks.length ; i ++)
-        {
-            this.card_Stacks.add(this.suit_Stacks[i]);//9-12
-        }
-         Random random = new Random();
-        ArrayList<Card> normal_Rank = new ArrayList();
-        Card temp_card = null;
-        // 使用normal_Rank暂存52张卡牌的信息
+    {
+        this.card_Stacks.add(this.suit_Stacks[i]);//9-12
+    }
+    Random random = new Random();
+    ArrayList<Card> normal_Rank = new ArrayList();
+    Card temp_card = null;
+    // 使用normal_Rank暂存52张卡牌的信息
         for( Suit suit : Suit.values() )
+    {
+        for( Rank rank : Rank.values() )
         {
-            for( Rank rank : Rank.values() )
-            {
-                temp_card = new Card(rank, suit);
-                normal_Rank.add(temp_card);
-            }
+            temp_card = new Card(rank, suit);
+            normal_Rank.add(temp_card);
         }
-        int i;
-        //随机主七个主牌堆的牌
-        int index = 0;
+    }
+    int i;
+    //随机主七个主牌堆的牌
+    int index = 0;
         for( i = 0; i < 7; ++i) {
-            for(int j = 0; j <= i; ++j) {
-                while (true)
+        for(int j = 0; j <= i; ++j) {
+            while (true)
+            {
+                index = random.nextInt(normal_Rank.size());
+                temp_card = (Card)normal_Rank.get(index);
+                if( !this.table_Stacks[i].isEmpty() && temp_card.isRed() != this.table_Stacks[i].peek().isRed())
                 {
-                    index = random.nextInt(normal_Rank.size());
-                    temp_card = (Card)normal_Rank.get(index);
-                    if( !this.table_Stacks[i].isEmpty() && temp_card.isRed() != this.table_Stacks[i].peek().isRed())
-                    {
-                        this.table_Stacks[i].init(temp_card);
-                        normal_Rank.remove(index);
-                        break;
-                    }
-                    if(this.table_Stacks[i].isEmpty() )
-                    {
-                        this.table_Stacks[i].init(temp_card);
-                        normal_Rank.remove(index);
-                        break;
-                    }
+                    this.table_Stacks[i].init(temp_card);
+                    normal_Rank.remove(index);
+                    break;
+                }
+                if(this.table_Stacks[i].isEmpty() )
+                {
+                    this.table_Stacks[i].init(temp_card);
+                    normal_Rank.remove(index);
+                    break;
                 }
             }
         }
-        //将每个牌堆的顶端翻正
-        for(i = 0; i < 7; ++i) {
-            this.table_Stacks[i].peek().setFaceUp(true);
-        }
-        //将剩余牌放入发牌堆
-        for(i = 0; i < 24; ++i) {
-            index = random.nextInt(normal_Rank.size());
-            temp_card = (Card)normal_Rank.get(index);
-            this.deck_Stack.init(temp_card);
-            normal_Rank.remove(index);
-        }
     }
+    //将每个牌堆的顶端翻正
+        for(i = 0; i < 7; ++i) {
+        this.table_Stacks[i].peek().setFaceUp(true);
+    }
+    //将剩余牌放入发牌堆
+        for(i = 0; i < 24; ++i) {
+        index = random.nextInt(normal_Rank.size());
+        temp_card = (Card)normal_Rank.get(index);
+        this.deck_Stack.init(temp_card);
+        normal_Rank.remove(index);
+    }
+}
     //获取牌堆
     public CardStack getStack(int index) {
         return this.card_Stacks.get(index);
@@ -112,10 +120,53 @@ public final class  GameModel {
     //在卡牌移动后，更新桌面
     private void notifyListeners()
     {
+
+
         for( GameModelListener listener : aListeners )
         {
             listener.gameStateChanged();
         }
+
+    }
+    public void store()
+    {
+        System.out.println("333333");
+        this.regret_stack = new ArrayList<CardStack>();
+        this.regret_table_Stacks = new  TableStack[7];
+        for(int i = 0 ; i < table_Stacks.length ; i++)
+        {
+            this.regret_table_Stacks[i] = new TableStack();
+        }
+        this.regret_deck_Stack = new DeckStack();
+        this.regret_disCard_Stack = new DisCardStack();
+        this.regret_suit_Stacks = new SuitStack[4];
+        for(int i = 0 ; i< regret_suit_Stacks.length ; i++)
+        {
+            this.regret_suit_Stacks[i] = new SuitStack();
+        }
+        this.regret_stack.add(this.regret_deck_Stack);//0
+        this.regret_stack.add(this.regret_disCard_Stack);//1
+        for(int i = 0 ; i < regret_table_Stacks.length ; i ++)
+        {
+            this.regret_stack.add(this.regret_table_Stacks[i]);//2-8
+        }
+        for(int i = 0 ; i < regret_suit_Stacks.length ; i ++)
+        {
+            this.regret_stack.add(this.regret_suit_Stacks[i]);//9-12
+        }
+        for(int i = 0 ; i< 13 ; i++)
+        {
+            for(int j = 0 ; j <this.card_Stacks.get(i).size() ; j++)
+            {
+                this.regret_stack.get(i).init(this.card_Stacks.get(i).peek(j));
+            }
+        }
+        System.out.println("22222");
+        for (int i = 0 ; i<13 ; i++)
+        {
+            System.out.println(this.regret_stack.get(i).size());
+        }
+
     }
     //返回卡牌的子序列，点击桌面堆的七个牌堆的子序列。
     public CardStack getSubStack(Card pCard, int aIndex)
@@ -218,7 +269,6 @@ public final class  GameModel {
                 Card temp_card = this.getStack(0).peek();
                 this.getStack(1).init(temp_card);
                 this.getStack(0).pop();
-                System.out.println(temp_card .getRank());
 
             }
         }
@@ -391,7 +441,32 @@ public final class  GameModel {
     }
     public void getRegret_stack()
     {
-        
+
+        System.out.println("111111");
+        for(int i = 0 ; i< 13 ; i++)
+        {
+            this.card_Stacks.get(i).clear();
+        }
+        for(int i = 0 ; i< 13 ; i++)
+        {
+            for(int j = 0 ; j <this.regret_stack.get(i).size() ; j++)
+            {
+
+                this.card_Stacks.get(i).init(this.regret_stack.get(i).peek(j));
+            }
+        }
+        for (int i = 2 ; i<9 ; i++)
+        {
+            for(int j = 0 ; j < this.card_Stacks.get(i).size() ; j++)
+            {
+                this.card_Stacks.get(i).peek(j).setFaceUp(false);
+            }
+        }
+        for(int i = 2; i < 9; ++i) {
+            this.card_Stacks.get(i).peek().setFaceUp(true);
+        }
+        notifyListeners();
+
     }
 
 }
