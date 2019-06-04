@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.Stack;
 
-public  class  GameModel {
+public final class  GameModel {
 
     private static final GameModel INSTANCE = new GameModel();
      private  ArrayList<CardStack> card_Stacks ;//存放桌面上的所有牌堆
@@ -130,7 +130,6 @@ public  class  GameModel {
     }
     public void store()
     {
-        System.out.println("333333");
         this.regret_stack = new ArrayList<CardStack>();
         this.regret_table_Stacks = new  TableStack[7];
         for(int i = 0 ; i < table_Stacks.length ; i++)
@@ -161,11 +160,7 @@ public  class  GameModel {
                 this.regret_stack.get(i).init(this.card_Stacks.get(i).peek(j));
             }
         }
-        System.out.println("22222");
-        for (int i = 0 ; i<13 ; i++)
-        {
-            System.out.println(this.regret_stack.get(i).size());
-        }
+
 
     }
     //返回卡牌的子序列，点击桌面堆的七个牌堆的子序列。
@@ -442,7 +437,57 @@ public  class  GameModel {
     public void getRegret_stack()
     {
 
-        System.out.println("111111");
+        ArrayList<Integer> flag = new ArrayList<Integer>();
+        for (int i = 2 ; i<9 ; i++)
+        {
+            if(this.card_Stacks.get(i).size() != this.regret_stack.get(i).size())
+            {
+                flag.add(i);
+            }
+        }
+        if(flag.size() == 1)
+        {
+            if(this.card_Stacks.get(flag.get(0)).size() <this.regret_stack.get(flag.get(0)).size() &&this.card_Stacks.get(flag.get(0)).size() >0 && this.regret_stack.get(flag.get(0)).size() > 1)
+            {
+                if(this.regret_stack.get(flag.get(0)).peek(this.regret_stack.get(flag.get(0)).size() - 2).isFaceUp())
+                {
+                    this.regret_stack.get(flag.get(0)).peek(this.regret_stack.get(flag.get(0)).size()-2).setFaceUp(false);
+                }
+            }
+
+        }
+        if(flag.size() ==2)
+        {
+            System.out.println(this.card_Stacks.get(flag.get(0)).size());
+            System.out.println(this.regret_stack.get(flag.get(0)).size());
+            if(this.card_Stacks.get(flag.get(0)).size() -this.regret_stack.get(flag.get(0)).size() == 1 )
+            {
+
+                this.regret_stack.get(flag.get(1)).peek(this.regret_stack.get(flag.get(1)).size()-2).setFaceUp(false);
+                System.out.println("1111");
+            }
+            if(this.card_Stacks.get(flag.get(1)).size() -this.regret_stack.get(flag.get(1)).size()  ==1)
+            {
+                this.regret_stack.get(flag.get(0)).peek(this.regret_stack.get(flag.get(0)).size()-2).setFaceUp(false);
+                System.out.println("2222");
+            }
+            if(this.card_Stacks.get(flag.get(0)).size() - this.regret_stack.get(flag.get(0)).size() >=2)
+            {
+                int i = this.card_Stacks.get(flag.get(0)).size() - this.regret_stack.get(flag.get(0)).size();
+                this.regret_stack.get(flag.get(1)).peek(this.regret_stack.get(flag.get(1)).size()-i-1).setFaceUp(false);
+                System.out.println("3333");
+            }
+            if(this.card_Stacks.get(flag.get(1)).size() -this.regret_stack.get(flag.get(1)).size() >=2)
+            {
+                int i = this.card_Stacks.get(flag.get(1)).size() - this.regret_stack.get(flag.get(1)).size();
+                this.regret_stack.get(flag.get(0)).peek(this.regret_stack.get(flag.get(0)).size()-i-1).setFaceUp(false);
+                System.out.println("4444");
+            }
+
+        }
+
+
+
         for(int i = 0 ; i< 13 ; i++)
         {
             this.card_Stacks.get(i).clear();
@@ -455,16 +500,7 @@ public  class  GameModel {
                 this.card_Stacks.get(i).init(this.regret_stack.get(i).peek(j));
             }
         }
-        for (int i = 2 ; i<9 ; i++)
-        {
-            for(int j = 0 ; j < this.card_Stacks.get(i).size() ; j++)
-            {
-                this.card_Stacks.get(i).peek(j).setFaceUp(false);
-            }
-        }
-        for(int i = 2; i < 9; ++i) {
-            this.card_Stacks.get(i).peek().setFaceUp(true);
-        }
+
         notifyListeners();
 
     }
