@@ -60,7 +60,7 @@ public class SuitPileView extends StackPane  implements GameModelListener
             @Override
             public void handle(MouseEvent pMouseEvent)
             {
-                GameModel.instance().store();
+
                 Dragboard db = pImageView.startDragAndDrop(TransferMode.ANY);
                 ClipboardContent content = new ClipboardContent();
                 content.putString(pCard.getIDString());
@@ -134,6 +134,7 @@ public class SuitPileView extends StackPane  implements GameModelListener
             @Override
             public void handle(DragEvent pEvent)
             {
+                GameModel.instance().store();
                 Dragboard db = pEvent.getDragboard();
                 boolean success = false;
                 if(db.hasString())

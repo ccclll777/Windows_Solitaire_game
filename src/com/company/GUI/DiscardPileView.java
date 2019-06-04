@@ -132,7 +132,7 @@ private void buildLayout()
 			@Override
 			public void handle(MouseEvent pMouseEvent)
 			{
-				GameModel.instance().store();
+
 				Dragboard db = pImageView.startDragAndDrop(TransferMode.ANY);
 				ClipboardContent content = new ClipboardContent();
 				content.putString(pCard.getIDString());
@@ -209,6 +209,7 @@ private void buildLayout()
 				boolean success = false;
 				if(db.hasString())
 				{
+					GameModel.instance().store();
 					boolean a =  GameModel.instance().moveCard(GameModel.instance().StringToStack(db.getString()), aIndex);
 					System.out.println(a);
 					success = true;

@@ -74,7 +74,6 @@ public class TablePileView extends StackPane implements GameModelListener
             @Override
             public void handle(MouseEvent pMouseEvent)
             {
-                GameModel.instance().store();
                 Dragboard db = pImageView.startDragAndDrop(TransferMode.ANY);
                 ClipboardContent content = new ClipboardContent();
                 content.putString(GameModel.instance().serialize(pCard,aIndex));
@@ -152,7 +151,7 @@ public class TablePileView extends StackPane implements GameModelListener
                 boolean success = false;
                 if(db.hasString())
                 {
-
+                    GameModel.instance().store();
                    boolean a =  GameModel.instance().moveCard(GameModel.instance().StringToStack(db.getString()), aIndex);
                     System.out.println(a);
                     success = true;

@@ -72,7 +72,7 @@ class DeckPileView extends HBox implements GameModelListener
 			@Override
 			public void handle(MouseEvent pEvent)
 			{
-				GameModel.instance().store();
+
 				((Button)pEvent.getSource()).setStyle(BUTTON_STYLE_NORMAL);
 				if( GameModel.instance().getStack(0).isEmpty() )
 				{
@@ -88,9 +88,11 @@ class DeckPileView extends HBox implements GameModelListener
 				}
 				else
 				{
+					GameModel.instance().store();
 
 					if(GameModel.instance().getLevel() == "high")
 					{
+
 						GameModel.instance().Desc_to_DisCard();
 					}
 					if(GameModel.instance().getLevel() == "low")

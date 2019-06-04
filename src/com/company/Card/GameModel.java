@@ -11,7 +11,7 @@ public final class  GameModel {
     private static final GameModel INSTANCE = new GameModel();
      private  ArrayList<CardStack> card_Stacks ;//存放桌面上的所有牌堆
     private  ArrayList<CardStack> regret_stack ;
-
+    private Stack<ArrayList> listStack = new Stack<ArrayList>();
     private int fromIndex;
     private DeckStack deck_Stack;//0
     private DisCardStack disCard_Stack;//1
@@ -160,7 +160,7 @@ public final class  GameModel {
                 this.regret_stack.get(i).init(this.card_Stacks.get(i).peek(j));
             }
         }
-
+        listStack.push(regret_stack);
 
     }
     //返回卡牌的子序列，点击桌面堆的七个牌堆的子序列。
@@ -436,72 +436,142 @@ public final class  GameModel {
     }
     public void getRegret_stack()
     {
-
-        ArrayList<Integer> flag = new ArrayList<Integer>();
-        for (int i = 2 ; i<9 ; i++)
+        if(!listStack.isEmpty())
         {
-            if(this.card_Stacks.get(i).size() != this.regret_stack.get(i).size())
+            ArrayList<CardStack> temp_list = listStack.peek();
+            listStack.pop();
+            ArrayList<Integer> flag = new ArrayList<Integer>();
+            for (int i = 2 ; i<9 ; i++)
             {
-                flag.add(i);
-            }
-        }
-        if(flag.size() == 1)
-        {
-            if(this.card_Stacks.get(flag.get(0)).size() <this.regret_stack.get(flag.get(0)).size() &&this.card_Stacks.get(flag.get(0)).size() >0 && this.regret_stack.get(flag.get(0)).size() > 1)
-            {
-                if(this.regret_stack.get(flag.get(0)).peek(this.regret_stack.get(flag.get(0)).size() - 2).isFaceUp())
+                if(this.card_Stacks.get(i).size() != temp_list.get(i).size())
                 {
-                    this.regret_stack.get(flag.get(0)).peek(this.regret_stack.get(flag.get(0)).size()-2).setFaceUp(false);
+                    flag.add(i);
                 }
             }
+            if(flag.size() == 1)
+            {
+                if(this.card_Stacks.get(flag.get(0)).size() <temp_list.get(flag.get(0)).size() &&this.card_Stacks.get(flag.get(0)).size() >0 && temp_list.get(flag.get(0)).size() > 1)
+                {
+                    if(temp_list.get(flag.get(0)).peek(temp_list.get(flag.get(0)).size() - 2).isFaceUp())
+                    {
+                        temp_list.get(flag.get(0)).peek(temp_list.get(flag.get(0)).size()-2).setFaceUp(false);
+                    }
+                }
 
+            }
+            if(flag.size() ==2)
+            {
+                if(this.card_Stacks.get(flag.get(0)).size() -temp_list.get(flag.get(0)).size() == 1 )
+                {
+
+                    temp_list.get(flag.get(1)).peek(temp_list.get(flag.get(1)).size()-2).setFaceUp(false);
+
+                }
+                if(this.card_Stacks.get(flag.get(1)).size() -temp_list.get(flag.get(1)).size()  ==1)
+                {
+                    temp_list.get(flag.get(0)).peek(temp_list.get(flag.get(0)).size()-2).setFaceUp(false);
+                }
+                if(this.card_Stacks.get(flag.get(0)).size() - temp_list.get(flag.get(0)).size() >=2)
+                {
+                    int i = this.card_Stacks.get(flag.get(0)).size() - temp_list.get(flag.get(0)).size();
+                    temp_list.get(flag.get(1)).peek(temp_list.get(flag.get(1)).size()-i-1).setFaceUp(false);
+
+                }
+                if(this.card_Stacks.get(flag.get(1)).size() -temp_list.get(flag.get(1)).size() >=2)
+                {
+                    int i = this.card_Stacks.get(flag.get(1)).size() - temp_list.get(flag.get(1)).size();
+                    temp_list.get(flag.get(0)).peek(temp_list.get(flag.get(0)).size()-i-1).setFaceUp(false);
+
+                }
+
+            }
+
+
+
+            for(int i = 0 ; i< 13 ; i++)
+            {
+                this.card_Stacks.get(i).clear();
+            }
+            for(int i = 0 ; i< 13 ; i++)
+            {
+                for(int j = 0 ; j <temp_list.get(i).size() ; j++)
+                {
+
+                    this.card_Stacks.get(i).init(temp_list.get(i).peek(j));
+                }
+            }
+            notifyListeners();
         }
-        if(flag.size() ==2)
+        else
         {
-            System.out.println(this.card_Stacks.get(flag.get(0)).size());
-            System.out.println(this.regret_stack.get(flag.get(0)).size());
-            if(this.card_Stacks.get(flag.get(0)).size() -this.regret_stack.get(flag.get(0)).size() == 1 )
-            {
-
-                this.regret_stack.get(flag.get(1)).peek(this.regret_stack.get(flag.get(1)).size()-2).setFaceUp(false);
-                System.out.println("1111");
-            }
-            if(this.card_Stacks.get(flag.get(1)).size() -this.regret_stack.get(flag.get(1)).size()  ==1)
-            {
-                this.regret_stack.get(flag.get(0)).peek(this.regret_stack.get(flag.get(0)).size()-2).setFaceUp(false);
-                System.out.println("2222");
-            }
-            if(this.card_Stacks.get(flag.get(0)).size() - this.regret_stack.get(flag.get(0)).size() >=2)
-            {
-                int i = this.card_Stacks.get(flag.get(0)).size() - this.regret_stack.get(flag.get(0)).size();
-                this.regret_stack.get(flag.get(1)).peek(this.regret_stack.get(flag.get(1)).size()-i-1).setFaceUp(false);
-                System.out.println("3333");
-            }
-            if(this.card_Stacks.get(flag.get(1)).size() -this.regret_stack.get(flag.get(1)).size() >=2)
-            {
-                int i = this.card_Stacks.get(flag.get(1)).size() - this.regret_stack.get(flag.get(1)).size();
-                this.regret_stack.get(flag.get(0)).peek(this.regret_stack.get(flag.get(0)).size()-i-1).setFaceUp(false);
-                System.out.println("4444");
-            }
-
+            return;
         }
 
 
+//        ArrayList<Integer> flag = new ArrayList<Integer>();
+//        for (int i = 2 ; i<9 ; i++)
+//        {
+//            if(this.card_Stacks.get(i).size() != this.regret_stack.get(i).size())
+//            {
+//                flag.add(i);
+//            }
+//        }
+//        if(flag.size() == 1)
+//        {
+//            if(this.card_Stacks.get(flag.get(0)).size() <this.regret_stack.get(flag.get(0)).size() &&this.card_Stacks.get(flag.get(0)).size() >0 && this.regret_stack.get(flag.get(0)).size() > 1)
+//            {
+//                if(this.regret_stack.get(flag.get(0)).peek(this.regret_stack.get(flag.get(0)).size() - 2).isFaceUp())
+//                {
+//                    this.regret_stack.get(flag.get(0)).peek(this.regret_stack.get(flag.get(0)).size()-2).setFaceUp(false);
+//                }
+//            }
+//
+//        }
+//        if(flag.size() ==2)
+//        {
+//            System.out.println(this.card_Stacks.get(flag.get(0)).size());
+//            System.out.println(this.regret_stack.get(flag.get(0)).size());
+//            if(this.card_Stacks.get(flag.get(0)).size() -this.regret_stack.get(flag.get(0)).size() == 1 )
+//            {
+//
+//                this.regret_stack.get(flag.get(1)).peek(this.regret_stack.get(flag.get(1)).size()-2).setFaceUp(false);
+//                System.out.println("1111");
+//            }
+//            if(this.card_Stacks.get(flag.get(1)).size() -this.regret_stack.get(flag.get(1)).size()  ==1)
+//            {
+//                this.regret_stack.get(flag.get(0)).peek(this.regret_stack.get(flag.get(0)).size()-2).setFaceUp(false);
+//                System.out.println("2222");
+//            }
+//            if(this.card_Stacks.get(flag.get(0)).size() - this.regret_stack.get(flag.get(0)).size() >=2)
+//            {
+//                int i = this.card_Stacks.get(flag.get(0)).size() - this.regret_stack.get(flag.get(0)).size();
+//                this.regret_stack.get(flag.get(1)).peek(this.regret_stack.get(flag.get(1)).size()-i-1).setFaceUp(false);
+//                System.out.println("3333");
+//            }
+//            if(this.card_Stacks.get(flag.get(1)).size() -this.regret_stack.get(flag.get(1)).size() >=2)
+//            {
+//                int i = this.card_Stacks.get(flag.get(1)).size() - this.regret_stack.get(flag.get(1)).size();
+//                this.regret_stack.get(flag.get(0)).peek(this.regret_stack.get(flag.get(0)).size()-i-1).setFaceUp(false);
+//                System.out.println("4444");
+//            }
+//
+//        }
+//
+//
+//
+//        for(int i = 0 ; i< 13 ; i++)
+//        {
+//            this.card_Stacks.get(i).clear();
+//        }
+//        for(int i = 0 ; i< 13 ; i++)
+//        {
+//            for(int j = 0 ; j <this.regret_stack.get(i).size() ; j++)
+//            {
+//
+//                this.card_Stacks.get(i).init(this.regret_stack.get(i).peek(j));
+//            }
+//        }
 
-        for(int i = 0 ; i< 13 ; i++)
-        {
-            this.card_Stacks.get(i).clear();
-        }
-        for(int i = 0 ; i< 13 ; i++)
-        {
-            for(int j = 0 ; j <this.regret_stack.get(i).size() ; j++)
-            {
-
-                this.card_Stacks.get(i).init(this.regret_stack.get(i).peek(j));
-            }
-        }
-
-        notifyListeners();
 
     }
 
